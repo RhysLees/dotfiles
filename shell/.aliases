@@ -1,29 +1,40 @@
-# PHP
-alias phpunit="vendor/bin/phpunit"
-alias phpunitw="phpunit-watcher watch"
-alias a="php artisan"
-alias ar="php artisan remote"
-alias c="composer"
-alias cu="composer update"
-alias cr="composer require"
-alias ci="composer install"
-alias cda="composer dump-autoload -o"
-alias larastan="vendor/bin/phpstan analyse"
-alias hostfile="sudo vi /etc/hosts"
-alias deploy='envoy run deploy'
-alias deploy-code='envoy run deploy-code'
-alias mfs='php artisan migrate:fresh --seed'
-alias nah='git reset --hard;git clean -df'
+# LARAVEL
+alias art='php artisan'
+alias test='art test'
+alias pest='./vendor/bin/pest'
+alias testc='XDEBUG_MODE=coverage art test --coverage'
+alias cclear='art cache:clear'
+alias m='art migrate'
+alias mf='art migrate:fresh'
+alias mrf='art migrate:refresh'
+alias mfs='mf --seed'
+alias mrfs='mrf --seed'
+alias qw='art queue:work'
+alias tinker='art tinker'
 
-alias pp="php artisan test --parallel"
-alias d="php artisan dusk"
-alias sshconfig="vi ~/.ssh/config"
-alias copykey='command cat ~/.ssh/id_rsa.public | pbcopy'
-alias sail='./vendor/bin/sail'
-alias tunnel='valet share -subdomain=freekmurze -region=eu'
+# NPM
+alias ni="npm install"
+alias nu="npm update"
+alias nrd="npm run dev"
+alias nrb="npm run build"
+alias nrw="npm run watch"
+alias nrwp="npm run watch-poll"
+alias nrh="npm run hot"
+alias nrp="npm run production"
 
-# JavaScript
-alias jest="./node_modules/.bin/jest"
+alias yrd="yarn run dev"
+alias yrw="yarn run watch"
+alias yrwp="yarn run watch-poll"
+alias yrh="yarn run hot"
+alias yrp="yarn run production"
+
+# COMPOSER
+alias c='composer'
+alias ci='c install'
+alias cu='c update'
+alias cr='c require'
+alias cda='c dumpautoload'
+alias co='c outdated --direct'
 
 # Git
 alias gc="git checkout"
@@ -76,7 +87,6 @@ alias scrape="scrapeUrl"
 
 # Switch NPM
 alias npmnpm="npm config set registry https://registry.npmjs.org"
-alias npmspatie="npm config set registry https://npm.spatie.be"
 
 # Restart touch bar
 alias touchbar="killall ControlStrip"
