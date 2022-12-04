@@ -82,7 +82,6 @@ export XDEBUG_CONFIG="idekey=VSCODE"
 # Enable autosuggestions
 source ~/.dotfiles/misc/oh-my-zsh-custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
 # Extra paths
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
