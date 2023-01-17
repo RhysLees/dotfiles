@@ -11,6 +11,7 @@ alias mfs='mf --seed'
 alias mrfs='mrf --seed'
 alias qw='art queue:work'
 alias tinker='art tinker'
+alias pint="vendor/bin/pint"
 
 # NPM
 alias ni="npm install"
