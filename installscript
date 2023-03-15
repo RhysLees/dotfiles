@@ -86,7 +86,7 @@ brew install git-secret
 
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
-brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip  suspicious-package
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip suspicious-package
 
 echo 'Install php'
 echo '-----------'
