@@ -1,7 +1,7 @@
 # LARAVEL
 alias art='php artisan'
-alias test='clear && art test'
-alias pest='clear && ./vendor/bin/pest'
+alias test='art test'
+alias pest='./vendor/bin/pest'
 alias pestc='pest --coverage'
 alias testc='art test --coverage --min=90'
 alias cclear='art cache:clear'
