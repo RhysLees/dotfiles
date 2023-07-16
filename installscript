@@ -164,6 +164,10 @@ echo 'Install zsh-autosuggestions'
 echo '---------------------------'
 brew install zsh-autosuggestions
 
+echo 'Install Warp terminal'
+echo '---------------------'
+brew install warp
+
 echo '++++++++++++++++++++++++++++++'
 echo '++++++++++++++++++++++++++++++'
 echo 'All done!'
