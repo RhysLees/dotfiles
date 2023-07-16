@@ -2,7 +2,7 @@
 alias art='php artisan'
 alias test='art test'
 alias pest='./vendor/bin/pest'
-alias pestc='pest --coverage'
+alias pestc='pest --coverage --min=90'
 alias testc='art test --coverage --min=90'
 alias cclear='art cache:clear'
 alias m='art migrate'
@@ -13,7 +13,9 @@ alias mrfs='mrf --seed'
 alias qw='art queue:work'
 alias tinker='art tinker'
 alias pint="vendor/bin/pint"
+alias dusk="art dusk --pest"
 alias wip="pint && pest"
+alias wipd="wip && dusk"
 
 # NPM
 alias ni="npm install"
