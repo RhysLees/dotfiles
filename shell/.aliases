@@ -92,3 +92,6 @@ alias npmnpm="npm config set registry https://registry.npmjs.org"
 
 # Restart touch bar
 alias touchbar="killall ControlStrip"
+
+alias php-log="open ~/.config/valet/Log/php-fpm.log"
+alias nginx-log="open ~/.config/valet/Log/nginx-error.log"
