@@ -4,6 +4,11 @@ export EDITOR="nano"
 # Brew
 export PATH="/opt/homebrew/bin:$PATH"
 
+# Pico 2040 SDK Path
+export PICO_SDK_PATH="$HOME/Code/Microcontroller/LibsAndSDKs/pico-sdk"
+export PICO_SDK_EXTERNAL_PATH="$HOME/Code/Microcontroller/LibsAndSDKs/pico-sdk/external"
+export PICO_LIB_PATH="$HOME/Code/Microcontroller/LibsAndSDKs"
+
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE

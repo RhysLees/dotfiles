@@ -16,6 +16,9 @@ alias pint="vendor/bin/pint"
 alias dusk="art dusk --pest"
 alias wip="pint && pest"
 alias wipd="wip && dusk"
+alias rl="art route:list --except-vendor"
+alias vp="art vendor:publish"
+alias vpf="vp --force"
 
 # NPM
 alias ni="npm install"
@@ -46,6 +49,10 @@ alias gc="git checkout"
 alias gpo="git push origin"
 alias gm="git merge"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gitfixignore="git rm -r --cached . && git add . && git commit -m 'fixed untracked files'"
+
+# Herd
+alias share="herd share --domain=share.rhyslees.co.uk --server=eu-1"
 
 # Fast open
 alias o="open ."
