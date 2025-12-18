@@ -17,8 +17,11 @@ alias dusk="art dusk --pest"
 alias wip="pint && pest"
 alias wipd="wip && dusk"
 alias rl="art route:list --except-vendor"
+alias rla="art route:list"
 alias vp="art vendor:publish"
 alias vpf="vp --force"
+alias larastan="./vendor/bin/phpstan analyse"
+alias rector="./vendor/bin/rector"
 
 # NPM
 alias ni="npm install"
@@ -49,7 +52,7 @@ alias gc="git checkout"
 alias gpo="git push origin"
 alias gm="git merge"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gitfixignore="git rm -r --cached . && git add . && git commit -m 'fixed untracked files'"
+alias gitignorefix="git rm -r --cached . && git add . && git commit -m 'fixed untracked files'"
 
 # Herd
 alias share="herd share --domain=share.rhyslees.co.uk --server=eu-1"
@@ -61,11 +64,7 @@ alias o="open ."
 alias l="ls -laF"
 
 # PhpStorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-
-# PHP
-alias switch-php80="brew unlink php@7.4 && brew link --overwrite --force php"
-alias switch-php74="brew unlink php && brew link --overwrite --force php@7.4"
+alias phpstorm='open -a ~/Applications/PhpStorm.app "`pwd`"'
 
 # Redis
 alias flush-redis="redis-cli FLUSHALL"
