@@ -47,6 +47,9 @@ alias cr='c require'
 alias cda='c dumpautoload'
 alias co='c outdated --direct'
 
+# Grep
+alias grep='grep --color=auto'
+
 # Git
 alias gc="git checkout"
 alias gpo="git push origin"

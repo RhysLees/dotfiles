@@ -33,8 +33,8 @@ export LESS_TERMCAP_md="$ORANGE"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto"
+# Always enable colored `grep` output (using alias instead of deprecated GREP_OPTIONS)
+# See .aliases for grep alias
 
 # Do not auto update brew
 export HOMEBREW_NO_AUTO_UPDATE=1

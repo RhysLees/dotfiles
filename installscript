@@ -44,13 +44,17 @@ echo 'Install homebrew'
 echo '----------------'
 echo install homebrew
 sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-echo 'Install node'
-echo '------------'
-brew install node
+echo 'Install fnm (Fast Node Manager)'
+echo '-------------------------------'
+brew install fnm
+
+echo 'Install node (via fnm)'
+echo '---------------------'
+# fnm will be initialized in .zshrc
 
 echo 'Install pkg-config'
 echo '------------------'
@@ -68,13 +72,37 @@ echo 'Install ncdu'
 echo '------------'
 brew install ncdu
 
-echo 'Install hub'
-echo '-----------'
-brew install hub
+echo 'Install gh (GitHub CLI)'
+echo '----------------------'
+brew install gh
 
 echo 'Install ack'
 echo '-----------'
 brew install ack
+
+echo 'Install ripgrep (rg)'
+echo '-------------------'
+brew install ripgrep
+
+echo 'Install fd'
+echo '---------'
+brew install fd
+
+echo 'Install bat'
+echo '-----------'
+brew install bat
+
+echo 'Install eza'
+echo '-----------'
+brew install eza
+
+echo 'Install fzf'
+echo '-----------'
+brew install fzf
+
+echo 'Install zoxide'
+echo '-------------'
+brew install zoxide
 
 echo 'Install doctl'
 echo '-------------'
@@ -91,8 +119,8 @@ brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatc
 echo 'Install php'
 echo '-----------'
 brew tap shivammathur/php
-brew install shivammathur/php/php@8.1
-brew link --overwrite --force php@8.1
+brew install shivammathur/php/php@8.3
+brew link --overwrite --force php@8.3
 
 echo 'Install composer'
 echo '----------------'

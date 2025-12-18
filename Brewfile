@@ -1,0 +1,38 @@
+# Homebrew taps
+tap "shivammathur/php"
+
+# Homebrew formulae
+brew "fnm"
+brew "pkg-config"
+brew "wget"
+brew "httpie"
+brew "ncdu"
+brew "gh"
+brew "ack"
+brew "ripgrep"
+brew "fd"
+brew "bat"
+brew "eza"
+brew "fzf"
+brew "zoxide"
+brew "doctl"
+brew "git-secret"
+brew "imagemagick"
+brew "mysql"
+brew "yarn"
+brew "ghostscript"
+brew "mackup"
+brew "zsh-autosuggestions"
+brew "warp"
+brew "shivammathur/php/php@8.3"
+
+# Homebrew casks
+cask "qlcolorcode"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlprettypatch"
+cask "quicklook-csv"
+cask "betterzip"
+cask "suspicious-package"
+
